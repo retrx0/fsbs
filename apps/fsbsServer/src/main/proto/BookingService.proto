@@ -1,0 +1,18 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package com.nsi.grpc;
+
+message BookingRequest {
+  string bookingDate = 1;
+  string userId = 2;
+  string stationId = 3;
+}
+
+message BookingResponse {
+  string status = 1;
+  string isSuccess = 2;
+}
+
+service BookingService {
+  rpc book(BookingRequest) returns (BookingResponse);
+}
