@@ -19,6 +19,8 @@
     <modules>
         <module>libfsbs</module>
         <module>libcommon</module>
+        <module>libbooking</module>
+        <module>libpayment</module>
     </modules>
 
 </project>

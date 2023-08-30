@@ -6,7 +6,6 @@
         <groupId>com.nsi</groupId>
         <artifactId>fsbs-libs-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
     <artifactId>libfsbs</artifactId>
     <version>1.0-SNAPSHOT</version>
