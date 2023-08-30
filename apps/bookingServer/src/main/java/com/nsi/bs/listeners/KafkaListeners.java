@@ -8,7 +8,7 @@ import static com.nsi.common.constants.KafkaConfigConstants.*;
 public class KafkaListeners {
 
     @KafkaListener(topics = KAFKA_FSBS_TOPIC, groupId = KAFKA_GROUP_ID)
-    public static void listenGroupFoo(String message) {
+    public static void onMessage(String message) {
         System.out.println("Received Message in group foo: " + message);
     }
 }

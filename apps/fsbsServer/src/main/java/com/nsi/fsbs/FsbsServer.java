@@ -20,8 +20,10 @@ public class FsbsServer {
 	}
 
 	@PostConstruct
-	void init(){
-		kafkaService.sendMessage("helllooooo");
+	void sendSomeMessages(){
+		for (int i = 0; i < 10; i++) {
+			kafkaService.sendMessage("Message from main server "+ i);
+		}
 	}
 
 }
