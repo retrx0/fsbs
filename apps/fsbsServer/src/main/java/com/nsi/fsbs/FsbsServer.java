@@ -21,9 +21,9 @@ public class FsbsServer {
 
 	@PostConstruct
 	void sendSomeMessages(){
-		for (int i = 0; i < 10; i++) {
-			kafkaService.sendMessage("Message from main server "+ i);
-		}
+//		for (int i = 0; i < 10; i++) {
+//			kafkaService.sendMessage("Message from main server "+ i);
+//		}
 	}
 
 }
