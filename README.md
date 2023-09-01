@@ -2,6 +2,8 @@
 
 A booking management system for custom services
 
+Mono repo for both applications and libraries
+
 ### Apps
 Application servers
 #### Main Server

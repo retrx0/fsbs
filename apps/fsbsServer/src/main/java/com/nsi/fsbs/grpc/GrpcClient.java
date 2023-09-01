@@ -1,4 +1,4 @@
-package com.nsi.fsbs;
+package com.nsi.fsbs.grpc;
 
 import com.nsi.grpc.BookingRequest;
 import com.nsi.grpc.BookingResponse;

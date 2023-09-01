@@ -1,7 +1,7 @@
-package com.nsi.validators;
+package com.nsi.common.validators;
 
-import com.nsi.annotations.PasswordMatches;
-import com.nsi.dto.UserRegistrationDTO;
+import com.nsi.common.annotations.PasswordMatches;
+import com.nsi.common.dto.UserRegistrationDTO;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 

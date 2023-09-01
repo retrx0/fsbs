@@ -2,7 +2,7 @@ package com.nsi.fsbs.services.auth.impl;
 
 import com.nsi.fsbs.exception.UserNameNotFoundException;
 import com.nsi.fsbs.repository.UserRepository;
-import com.nsi.model.User;
+import com.nsi.common.model.jpa.User;
 import org.springframework.stereotype.Service;
 
 @Service

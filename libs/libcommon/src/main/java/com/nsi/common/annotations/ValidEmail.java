@@ -1,6 +1,6 @@
-package com.nsi.annotations;
+package com.nsi.common.annotations;
 
-import com.nsi.validators.EmailValidator;
+import com.nsi.common.validators.EmailValidator;
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
 

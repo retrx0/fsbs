@@ -1,4 +1,4 @@
-package com.nsi.model;
+package com.nsi.common.model;
 
 import lombok.Data;
 

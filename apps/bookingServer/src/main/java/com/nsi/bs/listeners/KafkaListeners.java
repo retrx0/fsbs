@@ -3,7 +3,6 @@ package com.nsi.bs.listeners;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
-import static com.nsi.common.constants.KafkaConfigConstants.*;
 @Service
 public class KafkaListeners {
 

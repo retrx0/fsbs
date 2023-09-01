@@ -1,9 +1,9 @@
 package com.nsi.fsbs.controllers;
 
-import com.nsi.dto.UserRegistrationDTO;
+import com.nsi.common.dto.UserRegistrationDTO;
 import com.nsi.fsbs.exception.UserAlreadyExistException;
 import com.nsi.fsbs.services.web.impl.UserService;
-import com.nsi.model.User;
+import com.nsi.common.model.jpa.User;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import org.springframework.ui.Model;

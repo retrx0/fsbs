@@ -1,4 +1,4 @@
-package com.nsi.fsbs;
+package com.nsi.fsbs.grpc;
 
 import com.nsi.fsbs.services.grpc.impl.BookingServiceImpl;
 import io.grpc.Server;

@@ -1,6 +1,6 @@
-package com.nsi.annotations;
+package com.nsi.common.annotations;
 
-import com.nsi.validators.PasswordMatchesValidator;
+import com.nsi.common.validators.PasswordMatchesValidator;
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
 

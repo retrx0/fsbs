@@ -1,4 +1,4 @@
-package com.nsi.model;
+package com.nsi.common.model;
 
 /**
  * Booking status that for orders
