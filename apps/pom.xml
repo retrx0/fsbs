@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.nsi</groupId>
-        <artifactId>fsbs-parent</artifactId>
+        <artifactId>bs-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>fsbs-apps-parent</artifactId>
+    <artifactId>bs-apps-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>fsbs-apps-parent</name>
+    <name>bs-apps-parent</name>
     <description>Fuel Station Booking System Apps Parent</description>
     <packaging>pom</packaging>
     <properties>
@@ -18,15 +18,66 @@
     </properties>
 
     <modules>
-        <module>fsbsServer</module>
+        <module>bsServer</module>
         <module>bookingServer</module>
         <module>paymentServer</module>
     </modules>
 
+    <dependencyManagement>
+        <dependencies>
+            <!--		NSI LIBS		-->
+            <dependency>
+                <groupId>com.nsi</groupId>
+                <artifactId>libcommon</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!--        SPRING BOOT DEPENDENCIES        -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.integration</groupId>
+            <artifactId>spring-integration-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.integration</groupId>
+            <artifactId>spring-integration-kafka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-integration</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.integration</groupId>
+            <artifactId>spring-integration-http</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -34,6 +85,58 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
-</dependencies>
+
+        <!--		GRPC		-->
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-netty</artifactId>
+            <version>1.16.1</version>
+        </dependency>
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-protobuf</artifactId>
+            <version>1.16.1</version>
+        </dependency>
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-stub</artifactId>
+            <version>1.16.1</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+        <!--        DATABASE           -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.6.0</version>
+        </dependency>
+
+        <!--        TESTING FRAMEWORKS          -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>7.13.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.integration</groupId>
+            <artifactId>spring-integration-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
 </project>

@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.nsi</groupId>
-        <artifactId>fsbs-apps-parent</artifactId>
+        <artifactId>bs-apps-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
@@ -18,39 +18,9 @@
     </properties>
 
     <dependencies>
-        <!--		NSI LIBS		-->
         <dependency>
             <groupId>com.nsi</groupId>
             <artifactId>libcommon</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.integration</groupId>
-            <artifactId>spring-integration-jpa</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.integration</groupId>
-            <artifactId>spring-integration-kafka</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.kafka</groupId>
-            <artifactId>spring-kafka</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>javax.annotation</groupId>
-            <artifactId>javax.annotation-api</artifactId>
-            <version>1.2</version>
         </dependency>
     </dependencies>
 
