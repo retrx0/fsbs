@@ -4,12 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.nsi</groupId>
-        <artifactId>fsbs-libs-parent</artifactId>
+        <artifactId>bs-libs-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>libfsbs</artifactId>
+    <artifactId>libbs</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>libfsbs</name>
+    <name>libbs</name>
+    <packaging>pom</packaging>
     <description>Fuel Station Booking System</description>
     <properties>
         <java.version>17</java.version>

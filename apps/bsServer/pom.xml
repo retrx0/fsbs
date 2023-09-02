@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.nsi</groupId>
-		<artifactId>fsbs-apps-parent</artifactId>
+		<artifactId>bs-apps-parent</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>fsbsServer</artifactId>
+	<artifactId>bsServer</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<name>fsbsServer</name>
+	<name>mainServer</name>
 	<description>Fuel Station Booking System</description>
 	<packaging>jar</packaging>
 	<properties>
@@ -21,7 +21,11 @@
 			<groupId>com.nsi</groupId>
 			<artifactId>libcommon</artifactId>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<extensions>

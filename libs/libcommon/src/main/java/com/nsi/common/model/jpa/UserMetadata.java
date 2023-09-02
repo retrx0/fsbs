@@ -8,23 +8,26 @@ import lombok.ToString;
 
 import java.time.LocalDateTime;
 
-//@Entity
-//@Table(name = "user_metadata", schema = "public")
+@Entity
+@Table(name = "user_metadata", schema = "public")
 @Getter
 @Setter
 @ToString
 public class UserMetadata {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long metadata_id;
     @OneToOne
-            @JoinColumn(name = "user.user_id")
-    Long userId;
+    @MapsId
+    @JoinTable(name = "user", joinColumns = {@JoinColumn(name = "user_id")})
+    private User userId;
     @NotNull boolean isBlocked;
     @NotNull boolean isDeleted;
     @NotNull boolean isTrial;
     @NotNull boolean isPremium;
+    @NotNull boolean isActive;
+    @NotNull boolean isCredExpired;
     String deletedBy;
     @NotNull LocalDateTime lastLogin;
     @NotNull LocalDateTime modifiedTime;

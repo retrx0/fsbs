@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.nsi</groupId>
-        <artifactId>fsbs-parent</artifactId>
+        <artifactId>bs-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>fsbs-apps-parent</artifactId>
+    <artifactId>bs-apps-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>fsbs-apps-parent</name>
+    <name>bs-apps-parent</name>
     <description>Fuel Station Booking System Apps Parent</description>
     <packaging>pom</packaging>
     <properties>
@@ -18,7 +18,7 @@
     </properties>
 
     <modules>
-        <module>fsbsServer</module>
+        <module>bsServer</module>
         <module>bookingServer</module>
         <module>paymentServer</module>
     </modules>

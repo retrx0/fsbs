@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.nsi</groupId>
-    <artifactId>fsbs-parent</artifactId>
+    <artifactId>bs-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>fsbs-parent</name>
+    <name>bs-parent</name>
     <description>Fuel Station Booking System</description>
     <modules>
         <module>apps</module>

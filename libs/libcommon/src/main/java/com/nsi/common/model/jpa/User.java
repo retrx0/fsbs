@@ -16,7 +16,7 @@ import java.util.List;
 @ToString
 public class User implements Serializable {
 
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     Long userId;
     @NotNull
@@ -27,8 +27,9 @@ public class User implements Serializable {
     String email;
     @NotNull
     String phoneNumber;
-//    @NotNull
-//    List<UserRole> roles;
+    @NotNull
+    @ToString.Exclude
+    List<UserRole> roles;
     String pictureUrl;
     @NotNull
     String countryCode;

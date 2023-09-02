@@ -39,9 +39,10 @@ public class UserService {
         user.setPictureUrl(userDTO.getPictureUrl());
         user.setPhoneNumber(userDTO.getPhoneNumber());
         user.setDateOfBirth(LocalDate.now());
-        user.setCountryCode("NG");
-        user.setUserId(1L);
-//        user.setRoles(List.of(UserRole.USER));
+        user.setCountryCode(userDTO.getCountryCode());
+        user.setUserId(userDTO.getUserId());
+        user.setRoles(userDTO.getRoles());
+        user.setPassword(userDTO.getPassword());
 
         return userRepository.save(user);
     }

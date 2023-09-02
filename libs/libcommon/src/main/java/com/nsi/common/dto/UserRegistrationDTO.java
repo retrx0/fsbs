@@ -15,7 +15,7 @@ import java.util.List;
 @Data
 @PasswordMatches
 public class UserRegistrationDTO {
-    String userId;
+    Long userId;
     @NotNull @NotEmpty
     String firstName;
     @NotNull @NotEmpty

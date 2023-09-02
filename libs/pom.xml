@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.nsi</groupId>
-        <artifactId>fsbs-parent</artifactId>
+        <artifactId>bs-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>fsbs-libs-parent</artifactId>
+    <artifactId>bs-libs-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>fsbs-libs-parent</name>
+    <name>bs-libs-parent</name>
     <description>Fuel Station Booking System Libs Parent</description>
     <packaging>pom</packaging>
     <properties>
