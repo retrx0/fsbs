@@ -3,7 +3,9 @@ package com.nsi.bs.listeners;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
-import static com.nsi.common.constants.KafkaConfigConstants.*;
+import static com.nsi.common.constants.KafkaConfigConstants.KAFKA_FSBS_TOPIC;
+import static com.nsi.common.constants.KafkaConfigConstants.KAFKA_GROUP_ID;
+
 @Service
 public class KafkaListeners {
 

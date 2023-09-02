@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.nsi</groupId>
-        <artifactId>fsbs-apps-parent</artifactId>
+        <artifactId>bs-apps-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
@@ -16,5 +16,12 @@
         <maven.compiler.target>18</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.nsi</groupId>
+            <artifactId>libcommon</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
